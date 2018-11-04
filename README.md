@@ -53,9 +53,9 @@ Dependências dos pacotes que devem ficar em package.json:
     "admin-lte": "2.3.11",
     "core-js": "2.4.1",
     "font-awesome": "4.7.0",
-    "intl": "1.2.5",
-    "jquery": "3.1.1",
-    "reflect-metadata": "0.1.10",
+    "intl": "1.2.5",https://github.com/Dtambara/meat-app
+    "jquery": "3.1.1"https://github.com/Dtambara/meat-app,
+    "reflect-metadatahttps://github.com/Dtambara/meat-app": "0.1.10",
     "rxjs": "5.4.2",
     "ts-helpers": "1.1.2",
     "web-animations-js": "2.2.5",
