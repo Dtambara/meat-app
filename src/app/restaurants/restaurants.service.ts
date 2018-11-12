@@ -14,8 +14,16 @@ import { ErrorHandler } from '../app.error-handler';
 export class RestaurantsService {
   constructor(private http: Http) {}
 
-  restaurants(): Observable<Restaurant[]> {
-    return this.http.get(`${MEAT_API}/restaurants`)
+  getRestaurants(): Observable<Restaurant[]> {
+    return this.http
+      .get(`${MEAT_API}/restaurants`)
+      .map(response => response.json())
+      .catch(ErrorHandler.handleError);
+  }
+
+  getRestaurantById(id: string): Observable<Restaurant> {
+    return this.http
+      .get(`${MEAT_API}/restaurants/${id}`)
       .map(response => response.json())
       .catch(ErrorHandler.handleError);
   }
